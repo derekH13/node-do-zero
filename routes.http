@@ -1,0 +1,35 @@
+POST http://localhost:3333/videos
+content-Type: application/json
+
+{
+    "title": "derek",
+    "description": "Esse é meu primeiro projeto node",
+    "duration": 180
+}
+
+# divisão
+###
+
+GET http://localhost:3333/videos
+
+
+###
+# fazendo a requisição com query params search
+GET http://localhost:3333/videos?search=derek
+
+###
+
+PUT http://localhost:3333/videos/cd36d813-4e20-4d6e-abd3-759a7d468335
+content-Type: application/json
+
+{
+    "title": "derek2",
+    "description": "Esse é meu primeiro projeto node",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:3333/videos/57378d1d-e354-4b55-9bfd-85254341188d
+
+
