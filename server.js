@@ -63,8 +63,9 @@ server.delete('/videos/:id', async (request, response) => {
 })
 
 
-//  vai procurar a variavel de hambiente ese não existir irá usar 3333
+//  vai procurar a variavel de ambiente ese não existir irá usar 3333
 server.listen({
+    host: '0.0.0.0',
     port: process.env.PORT ?? 3333
 })
 
